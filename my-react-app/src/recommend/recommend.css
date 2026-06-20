@@ -1,0 +1,52 @@
+
+
+.recommendMain{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  direction: rtl;
+  gap: 20px;
+}
+
+.recommendMain div{
+  color: var(--text_muded_between);
+  font-weight: bold;
+  background-color: var(--layer-2-bg-color);
+  border-radius: 10px;
+}
+
+.songsOtterDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px 20px 20px;
+}
+
+.songsTitle{
+  margin-top: 5px;
+  border-bottom: 1px solid var(--text-muted);
+  padding: 10px 10px 10px 0;
+}
+
+.songsInnerDiv{
+  cursor: pointer;
+  max-width: 250px;
+  transition: 0.25s;
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  padding: 1px;
+  align-items: center;
+}
+
+.songsInnerDiv:hover {
+  color: rgb(81, 136, 230);
+}
+
+.songsInnerDiv::before {
+  content: " -"; /* Dot + Space */
+  color: var(--text);
+}

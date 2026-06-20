@@ -1,0 +1,13 @@
+@import url('../index.css');
+
+.searchMainDiv {
+  gap: clamp(15px, 5vw ,40px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  direction: rtl;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--layer-2-bg-color);
+  margin: 0 20px 10px 10px;
+}

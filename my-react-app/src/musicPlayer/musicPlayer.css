@@ -1,0 +1,172 @@
+@import url('../index.css');
+
+.musicPlayerDiv {
+  background-color: var(--layer-2-bg-color);
+  position: relative;
+  width: calc(100% - 50px);
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px 30px 10px;
+  direction: rtl;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.titleMusicPlayerDiv{
+  width: calc(100% + 20px - 150px);
+  height: auto;
+  min-height: 100px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--layer-1-bg-color);
+  position: relative;
+  cursor: default;
+}
+
+.titleMusicPlayer{
+  position: absolute;
+  top: 10px;
+  width: calc(100%);
+  right: 20px;
+  color: var(--text_muded_between);
+  font-size: var(--text-font-middle);
+}
+
+.titleMusicPlayer b{
+  font-size: var(--text-font-large);
+  text-decoration: underline;
+}
+
+.titleMusicPlayer strong{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dateMusicPlayer {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: var(--text_muded_between);
+  font-size: calc(var(--text-font-small) - 2px);
+}
+
+.imageMusicPlayerDiv{
+  background-color: var(--layer-1-bg-color);
+  padding: clamp(10px,3vw ,30px);
+  border-radius: 20px;
+  border: 2px solid var(--text-muted);
+  margin: 0px 10px 0px 10px;
+  width: 60%;
+}
+
+.imageMusicPlayer{
+  border-radius: 3px;
+  width: 100%;
+}
+
+.descriptionMusicPlayer{
+  text-align: center;
+  color: var(--text_muded_between);
+  font-size: var(--text-font-middle);
+  font-weight: bold;
+  line-height: 160%;
+  white-space: pre-line;
+}
+
+.musicplayDiv{
+  display: grid;
+  padding-top: 50px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slideBarMusicDiv{
+  justify-self: center;
+  position: absolute;
+  width: 80%;
+  top: 10px;
+}
+
+.slideBarMusicDiv input{
+  width: 100%;
+  direction: ltr;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--higest-number);
+  height: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slideBarMusicDiv input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
+  border-radius: 50%;
+  background-color: var(--main-webiste-color);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.slideBarMusicDiv input::-webkit-slider-thumb:hover{
+  background-color: hsl(212, 76%, 49%);
+}
+
+.slideBarMusicDiv input::-webkit-slider-thumb:active{
+  background-color: hsl(212, 100%, 50%);
+}
+
+.musicButtons{
+  display: flex;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+}
+
+.togglePlayImageDiv img{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.downloadButtonDiv{
+  background-color: var(--layer-1-bg-color);
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--text_muded_between);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.downloadButtonDiv:hover{
+  background-color: var(--layer-3-bg-color);
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.startTimeDiv{
+  position: absolute;
+  left: 3px;
+  top: 35px;
+  font-size: var(--text-font-small);
+  color: var(--text_muded_between);
+}
+
+.stopTimeDiv{
+  position: absolute;
+  right: 2px;
+  top: 35px;
+  color: var(--text_muded_between);
+}

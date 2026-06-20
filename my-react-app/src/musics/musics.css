@@ -1,0 +1,102 @@
+@import url('../index.css');
+
+.musicMain{
+  display: grid;
+  gap: 30px;
+  padding: 0px 10px 10px 0px;
+}
+
+.musicMainInnderDiv{
+  background-color: var(--layer-2-bg-color);
+  position: relative;
+  width: calc(100% - 20px);
+  padding: 65px 0px 10px 0px;
+  margin-left: 10px;
+  direction: rtl;
+  border-radius: 10px;
+}
+
+.musicMainDiv{
+  position: absolute;
+  top: 0;
+  width: calc(100% - 20px);
+  border-radius: 10px 10px 0px 0px;
+  padding-top: 8px;
+  height: 48px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  border-bottom: 2px solid var(--text-muted);
+}
+
+.musicMain2{
+  color: var(--text_muded_between);
+  font-size: calc(var(--text-font-middle) + 3px);
+  font-weight: bold;
+}
+
+.MusicBoxDiv{
+  display: flex;
+  width: calc(100% - 50px);
+  gap: clamp(15px, 12px + 1vw, 30px);
+  padding-left: 25px;
+  padding-right: 15px
+}
+
+.MusicBoxInnerDiv{
+  display: grid;
+  cursor: pointer;
+}
+
+.MusicBoxInnerDiv img{
+  width: clamp(100px, 60px + 10vw, 300px);
+  height: clamp(100px, 60px + 10vw, 300px);
+  border-radius: 10px;
+}
+
+.MusicBoxInnerDiv p {
+  color: var(--text_muded_between);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  font-size: calc(var(--text-font-middle) - 2px);  
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  width: clamp(100px, 60px + 10vw, 300px);
+  line-height: 25px;
+}
+
+
+
+.MoreSongsButton{
+  width: 130px;
+  height: 25px;
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-top: 2px;
+  font-size: calc(var(--text-font-middle) - 3px);
+  background-color: var(--layer-1-bg-color);
+  color: var(--text_muded_between);
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.MoreSongsButton:hover{
+  background-color: var(--layer-2-bg-color);
+}
+
+
+.MoreSongsButton img {
+  width: 15px;
+  position: absolute;
+  top: 5.4px;
+  left: 9px;
+  rotate: 180deg;
+  filter: var(--items-colors);
+}

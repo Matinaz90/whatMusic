@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --main-webiste-color: hsl(212, 80%, 40%);
+    
+    --layer-4-bg-color: hsl(0, 0%, 0%);
+    --layer-3-bg-color: hsl(0, 0%, 5%);
+    --layer-2-bg-color: hsl(0, 0%, 10%);
+    --layer-1-bg-color: hsl(0, 0%, 15%);
+    --higest-number: hsl(0, 0%, 22%);
+
+
+    --border-color: hsl(0, 0%, 30%);
+    --hover-color:hsl(0, 0%, 10%);
+
+    --text: hsl(0, 0%, 95%);
+    --text_muded_between: hsl(0, 0%, 85%);
+    --text-muted: hsl(0, 0%, 75%);
+
+    --back_ground_blur: hsla(0, 0%, 0%, 0.318);
+    --blur_color: blur(20px);
+
+    --text-font-small: clamp(4px, 4px + 0.357vw, 18px);
+    --text-font-middle: clamp(8px, 8px + 0.595vw, 24px);
+    --text-font-large: clamp(10px, 10px + 1.19vw, 34px);
+
+    --text-font-family: 'Vazirmatn', sans-serif;
+
+    --dark-white-sensor: hsl(0, 0%, 88%);
+
+    --items-colors: invert(90%);
+    --items-colors-hover: invert(100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;  
+  font-family: var(--text-font-family);
+  scrollbar-width: thin;           
+  scrollbar-color: var(--text_muded_between) transparent; 
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px; 
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--text_muded_between);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--layer-2-bg-color);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--layer-4-bg-color);
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.no-scrool{
+  overflow: hidden;
+}
+
+body img {
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;  
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: none;
+}
+
+img {
+  -webkit-user-drag: none;  /* Safari/Chrome */
+  -khtml-user-drag: none;   /* Konqueror */
+  -moz-user-drag: none;     /* Firefox (not always necessary) */
+  -o-user-drag: none;       /* Opera */
+  user-drag: none;          /* Standard */
+}
+
+
+#hiddle {
+  display: none;
+}
+
+.no-scrool{
+  overflow: hidden;
+}
